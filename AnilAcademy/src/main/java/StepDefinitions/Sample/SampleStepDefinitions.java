@@ -1,6 +1,7 @@
 package StepDefinitions.Sample;
 
 import Helpers.helper;
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -26,5 +27,9 @@ public class SampleStepDefinitions {
 
     @When("user logged in with {string} and {string}")
     public void userLoggedInWithAnd(String arg0, String arg1) {
+    }
+    @After
+    public void CloseBrowser(){
+       help.afterScenario(wd);
     }
 }

@@ -9,12 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/FeatureFiles"
         ,glue={"StepDefinitions"}
+        ,plugin = {"pretty","html:src/test/Reports/CucumberReport/cucumber-report.html"}
+        ,tags = "@Sample"
 )
 
-public class TestRunner extends ExtentReport {
-    ExtentReport ex=new ExtentReport();
+public class TestRunner {
 
-    public void Report(){
-        ExtentReport.getReportObject();
-    }
 }

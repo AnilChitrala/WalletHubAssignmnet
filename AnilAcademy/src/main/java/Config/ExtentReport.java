@@ -9,7 +9,7 @@ public class ExtentReport {
 
     public static ExtentReports getReportObject()
     {
-        String path =System.getProperty("src/test/Reports/index.html");
+        String path =System.getProperty("src/test/Reports/ExtentReport/index.html");
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("Web Automation Results");
         reporter.config().setDocumentTitle("Test Results");
