@@ -19,14 +19,17 @@ public class SampleStepDefinitions {
 
     @When("user logged in with Username and password")
     public void userLoggedInWithUsernameAndPassword() {
+        System.out.println("Java");
     }
 
     @Then("Verify user is on Sample website")
     public void verifyUserIsOnSampleWebsite() {
+        System.out.println("Java");
     }
 
     @When("user logged in with {string} and {string}")
     public void userLoggedInWithAnd(String arg0, String arg1) {
+        System.out.println("Java"+arg0+arg1);
     }
     @After
     public void CloseBrowser(){
