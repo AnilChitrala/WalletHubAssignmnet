@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         features = "src/main/resources/FeatureFiles"
         ,glue={"StepDefinitions"}
         ,plugin = {"pretty","html:src/test/Reports/CucumberReport/cucumber-report.html"}
-        ,tags = "@Sample"
 )
 
 public class TestRunner {
