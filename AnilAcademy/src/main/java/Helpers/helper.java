@@ -129,7 +129,7 @@ public class helper {
      */
     public void moveMouseToSpecificElement(WebDriver driver, String keyValue) {
         Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(By.xpath(keyValue)));
+        actions.moveToElement(driver.findElement(By.xpath(keyValue))).perform();
     }
 
     /**
